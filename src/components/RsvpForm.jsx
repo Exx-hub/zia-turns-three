@@ -37,7 +37,7 @@ function RsvpForm() {
         feedback = "🦕 Thank you! We hope you become available and reach out.";
       }
 
-      toast(feedback, {
+      toast.success(feedback, {
         position: "top-right",
         autoClose: 5000,
         hideProgressBar: false,
@@ -45,7 +45,7 @@ function RsvpForm() {
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-        theme: "colored",
+        theme: "dark",
       });
     } catch (error) {
       console.log(error);
