@@ -68,7 +68,7 @@ function RsvpForm() {
       </div>
       <form onSubmit={handleSubmit}>
         <div className="flex space-x-3 text-sm justify-center">
-          <div className="cursor-pointer">
+          <div>
             <label className="mr-1">Yes</label>
             <input
               name="yes"
@@ -76,9 +76,10 @@ function RsvpForm() {
               type="radio"
               checked={response === "yes"}
               onChange={(e) => setResponse(e.target.value)}
+              className="cursor-pointer"
             />
           </div>
-          <div className="cursor-pointer">
+          <div>
             <label className="mr-1">Not Yet Sure</label>
             <input
               name="notSure"
@@ -86,9 +87,10 @@ function RsvpForm() {
               type="radio"
               checked={response === "not sure"}
               onChange={(e) => setResponse(e.target.value)}
+              className="cursor-pointer"
             />
           </div>
-          <div className="cursor-pointer">
+          <div>
             <label className="mr-1">{"Can't"}</label>
             <input
               name="cant"
@@ -96,6 +98,7 @@ function RsvpForm() {
               type="radio"
               checked={response === "cant"}
               onChange={(e) => setResponse(e.target.value)}
+              className="cursor-pointer"
             />
           </div>
         </div>
